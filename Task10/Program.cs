@@ -25,7 +25,6 @@ void ShowSecondDigit(){
     int res = GetSecondDigit(number);
     if(res == -1){
         Console.WriteLine("Error: Необходимо ввести трёхзначное число!!!");
-        return;
     } else Console.WriteLine($"{number} -> {GetSecondDigit(number)}");
 }
 

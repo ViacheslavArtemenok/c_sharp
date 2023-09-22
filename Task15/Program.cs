@@ -24,7 +24,6 @@ void ShowCheckDayOfWeek(){
         Console.WriteLine($"{number} -> {(CheckDayOfWeek(number) ? "да" : "нет")}");
     } else {
         Console.WriteLine("Error: Необходимо ввести цифру, обозначающую день недели!!!");
-        return;
     }
 }
 
