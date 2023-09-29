@@ -16,22 +16,22 @@ int GetThirdDigit(int number){
     }
 }
 
-void TestThirdDigit(int number, int pattern){
+void TestGetThirdDigit(int number, int pattern){
     bool res = GetThirdDigit(number) == pattern;
     Console.WriteLine($"{number} -> {pattern}");
     Console.WriteLine($"{number} -> {GetThirdDigit(number)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowThirdDigit(){
+void ShowGetThirdDigit(){
     Console.WriteLine("Введите трёхзначное или большее число");
     int number = Convert.ToInt32(Console.ReadLine());
     int res = GetThirdDigit(number);
     Console.WriteLine($"{number} -> {(res == -1 ? "третьей цифры нет" : res)}");
 }
 
-TestThirdDigit(645, 5);
-TestThirdDigit(78, -1);
-TestThirdDigit(32679, 6);
-ShowThirdDigit();
+TestGetThirdDigit(645, 5);
+TestGetThirdDigit(78, -1);
+TestGetThirdDigit(32679, 6);
+ShowGetThirdDigit();
 
