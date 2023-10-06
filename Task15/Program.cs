@@ -9,14 +9,14 @@ bool CheckDayOfWeek(int number){
     else return false;
 }
 
-void TestCheckDayOfWeek(int number, bool pattern){
+void TestDayOfWeek(int number, bool pattern){
     bool res = CheckDayOfWeek(number) == pattern;
     Console.WriteLine($"{number} -> {pattern}");
     Console.WriteLine($"{number} -> {CheckDayOfWeek(number)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowCheckDayOfWeek(){
+void ShowDayOfWeek(){
     Console.WriteLine("Введите цифру, обозначающую день недели");
     int number = Convert.ToInt32(Console.ReadLine());
     if(number > 0 && number < 8){
@@ -27,7 +27,7 @@ void ShowCheckDayOfWeek(){
     }
 }
 
-TestCheckDayOfWeek(6, true);
-TestCheckDayOfWeek(7, true);
-TestCheckDayOfWeek(1, false);
-ShowCheckDayOfWeek();
+TestDayOfWeek(6, true);
+TestDayOfWeek(7, true);
+TestDayOfWeek(1, false);
+ShowDayOfWeek();

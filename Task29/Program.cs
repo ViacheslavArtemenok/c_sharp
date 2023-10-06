@@ -28,7 +28,7 @@ void ConvertArrayToString(int[] arr){
     Console.Write("]");
 }
 
-void TestGetRandomArray(int length, int pattern){
+void TestRandomArray(int length, int pattern){
     int[] randomArr = GetRandomArray(length);
     bool res = randomArr.Length == pattern;
     Console.WriteLine($"{length} -> {pattern}");
@@ -36,12 +36,12 @@ void TestGetRandomArray(int length, int pattern){
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowGetRandomArray(){
+void ShowRandomArray(){
     Console.WriteLine("Введите количество элементов массива");
     int length = Convert.ToInt32(Console.ReadLine());
     int[] res = GetRandomArray(length);
     ConvertArrayToString(res);
 }
 
-TestGetRandomArray(8, 8);
-ShowGetRandomArray();
+TestRandomArray(8, 8);
+ShowRandomArray();

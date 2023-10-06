@@ -15,21 +15,21 @@ int GetSumOfDigits(int number){
     
 }
 
-void TestGetSumOfDigits(int number, int pattern){
+void TestSumOfDigits(int number, int pattern){
     bool res = GetSumOfDigits(number) == pattern;
     Console.WriteLine($"{number} -> {pattern}");
     Console.WriteLine($"{number} -> {GetSumOfDigits(number)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowGetSumOfDigits(){
+void ShowSumOfDigits(){
     Console.WriteLine("Введите целое число");
     int number = Convert.ToInt32(Console.ReadLine());
     int res = GetSumOfDigits(number);
     Console.WriteLine($"{number} -> {res}");
 }
 
-TestGetSumOfDigits(452, 11);
-TestGetSumOfDigits(82, 10);
-TestGetSumOfDigits(9012, 12);
-ShowGetSumOfDigits();
+TestSumOfDigits(452, 11);
+TestSumOfDigits(82, 10);
+TestSumOfDigits(9012, 12);
+ShowSumOfDigits();

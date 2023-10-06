@@ -15,14 +15,14 @@ int GetADegreeB(int a, int b){
     }
 
 
-void TestGetADegreeB(int a, int b, int pattern){
+void TestADegreeB(int a, int b, int pattern){
     bool res = GetADegreeB(a, b) == pattern;
     Console.WriteLine($"{a}^{b} -> {pattern}");
     Console.WriteLine($"{a}^{b} -> {GetADegreeB(a, b)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowGetADegreeB(){
+void ShowADegreeB(){
     Console.WriteLine("Введите число A");
     int a = Convert.ToInt32(Console.ReadLine());
     Console.WriteLine("Введите число B");
@@ -31,6 +31,6 @@ void ShowGetADegreeB(){
     Console.WriteLine($"{a}^{b} -> {res}");
 }
 
-TestGetADegreeB(3, 5, 243);
-TestGetADegreeB(2, 4, 16);
-ShowGetADegreeB();
+TestADegreeB(3, 5, 243);
+TestADegreeB(2, 4, 16);
+ShowADegreeB();
