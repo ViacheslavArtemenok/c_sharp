@@ -19,27 +19,31 @@ using System;
 public class Answer
 {
     public static double FindMax(double[] array)
-    {   double max = array[0];
+    {
+        double max = array[0];
         for (int i = 1; i < array.Length; i++)
         {
-            if(array[i] > max){
+            if (array[i] > max)
+            {
                 max = array[i];
             }
-            
+
         }
-        return max;       
+        return max;
     }
 
     public static double FindMin(double[] array)
-    {     double min = array[0];
+    {
+        double min = array[0];
         for (int i = 1; i < array.Length; i++)
         {
-            if(array[i] < min){
+            if (array[i] < min)
+            {
                 min = array[i];
             }
-            
+
         }
-        return min;  
+        return min;
     }
 
     public static double CalcDifferenceBetweenMaxMin(double[] array)
@@ -53,13 +57,15 @@ public class Answer
     {
         for (int i = 0; i < array.Length; i++)
         {
-            if(i == array.Length - 1){
+            if (i == array.Length - 1)
+            {
                 Console.WriteLine($"{array[i]}");
-            } else Console.Write($"{array[i]}\t");
+            }
+            else Console.Write($"{array[i]}\t");
         }
 
     }
- // Не удаляйте и не меняйте метод Main! 
+    // Не удаляйте и не меняйте метод Main! 
 
 
     public static void Main(string[] args)

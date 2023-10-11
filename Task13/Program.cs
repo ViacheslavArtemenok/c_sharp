@@ -2,28 +2,36 @@
 // 645 -> 5
 // 78 -> третьей цифры нет
 // 32679 -> 6
-int GetThirdDigit(int number){
-    if(number < 0){
+int GetThirdDigit(int number)
+{
+    if (number < 0)
+    {
         number *= -1;
     }
-    if(number < 100){
+    if (number < 100)
+    {
         return -1;
-    } else {
-        while(number > 999){
-        number /= 10;
+    }
+    else
+    {
+        while (number > 999)
+        {
+            number /= 10;
         }
         return number %= 10;
     }
 }
 
-void TestThirdDigit(int number, int pattern){
+void TestThirdDigit(int number, int pattern)
+{
     bool res = GetThirdDigit(number) == pattern;
     Console.WriteLine($"{number} -> {pattern}");
     Console.WriteLine($"{number} -> {GetThirdDigit(number)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowThirdDigit(){
+void ShowThirdDigit()
+{
     Console.WriteLine("Введите трёхзначное или большее число");
     int number = Convert.ToInt32(Console.ReadLine());
     int res = GetThirdDigit(number);

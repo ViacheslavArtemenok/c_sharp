@@ -2,19 +2,25 @@
 5 -> 2, 4
 8 -> 2, 4, 6, 8*/
 
-string ShowAllEvenNumbers(int n){
+string ShowAllEvenNumbers(int n)
+{
     string res = $"{n} -> ";
-    if(n > 1){
-        for(int e = 1; e <= n; e++){
-            if(e % 2 == 0){
-                if(e == 2){
+    if (n > 1)
+    {
+        for (int e = 1; e <= n; e++)
+        {
+            if (e % 2 == 0)
+            {
+                if (e == 2)
+                {
                     res += $"{e}";
                 }
                 else res += $", {e}";
-            }   
+            }
         }
     }
-    else {
+    else
+    {
         res += "empty";
     }
     return res;

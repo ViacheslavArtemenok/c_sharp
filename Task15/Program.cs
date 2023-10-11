@@ -2,27 +2,34 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
-bool CheckDayOfWeek(int number){
-    if(number > 5 && number < 8){
+bool CheckDayOfWeek(int number)
+{
+    if (number > 5 && number < 8)
+    {
         return true;
     }
     else return false;
 }
 
-void TestDayOfWeek(int number, bool pattern){
+void TestDayOfWeek(int number, bool pattern)
+{
     bool res = CheckDayOfWeek(number) == pattern;
     Console.WriteLine($"{number} -> {pattern}");
     Console.WriteLine($"{number} -> {CheckDayOfWeek(number)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowDayOfWeek(){
+void ShowDayOfWeek()
+{
     Console.WriteLine("Введите цифру, обозначающую день недели");
     int number = Convert.ToInt32(Console.ReadLine());
-    if(number > 0 && number < 8){
+    if (number > 0 && number < 8)
+    {
         Console.WriteLine("Это выходной?");
         Console.WriteLine($"{number} -> {(CheckDayOfWeek(number) ? "да" : "нет")}");
-    } else {
+    }
+    else
+    {
         Console.WriteLine("Error: Необходимо ввести цифру, обозначающую день недели!!!");
     }
 }

@@ -2,27 +2,32 @@
 // 452 -> 11
 // 82 -> 10
 // 9012 -> 12
-int GetSumOfDigits(int number){
+int GetSumOfDigits(int number)
+{
     int res = 0;
-    if(number < 0){
+    if (number < 0)
+    {
         number *= -1;
     }
-       while(number > 0){
-            res += number % 10;
-            number /= 10;
-        }
-        return res;
-    
+    while (number > 0)
+    {
+        res += number % 10;
+        number /= 10;
+    }
+    return res;
+
 }
 
-void TestSumOfDigits(int number, int pattern){
+void TestSumOfDigits(int number, int pattern)
+{
     bool res = GetSumOfDigits(number) == pattern;
     Console.WriteLine($"{number} -> {pattern}");
     Console.WriteLine($"{number} -> {GetSumOfDigits(number)}");
     Console.WriteLine($"{(res ? "Тест пройден!" : "Тест не пройден")}");
 }
 
-void ShowSumOfDigits(){
+void ShowSumOfDigits()
+{
     Console.WriteLine("Введите целое число");
     int number = Convert.ToInt32(Console.ReadLine());
     int res = GetSumOfDigits(number);

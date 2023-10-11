@@ -33,8 +33,9 @@ Console.WriteLine($"{numberA} {symbol} {numberB} = {result}");
 */
 using System.Security.Cryptography.X509Certificates;
 
-static void SetCursor(int x, int y){
-Console.SetCursorPosition(x, y);
+static void SetCursor(int x, int y)
+{
+    Console.SetCursorPosition(x, y);
 }
 
 /*static void GetTriangle(int height){
@@ -46,15 +47,18 @@ for(int e = 1; e <= height; e++){
     }
 }*/
 
-static void Getpyramid(int height){
+static void Getpyramid(int height)
+{
     int x = 0;
     int y = 0;
-    for(int e = 1; e <= height; e++){
+    for (int e = 1; e <= height; e++)
+    {
         x = height - e;
         y = e - 1;
         SetCursor(x, y);
         int weight = e * 2 - 1;
-        for(int i = 0; i < weight; i++){
+        for (int i = 0; i < weight; i++)
+        {
             Console.Write("+");
         }
         Console.Write("\n");

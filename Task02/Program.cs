@@ -2,12 +2,15 @@
 a = 5; b = 7 -> max = 7
 a = 2 b = 10 -> max = 10
 a = -9 b = -3 -> max = -3*/
-int GetGreaterNumber(int a, int b){
-    if(a == b){
+int GetGreaterNumber(int a, int b)
+{
+    if (a == b)
+    {
         Console.Write("Числа равны! ");
         return 0;
     }
-    else if(a > b){
+    else if (a > b)
+    {
         return a;
     }
     else return b;

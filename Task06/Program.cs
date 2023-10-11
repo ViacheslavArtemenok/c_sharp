@@ -2,10 +2,13 @@
 4 -> да
 -3 -> нет
 7 -> нет*/
-bool CheckEvenNumber(int a){
-    if(a % 2 == 0){
+bool CheckEvenNumber(int a)
+{
+    if (a % 2 == 0)
+    {
         return true;
-    } else return false;
+    }
+    else return false;
 }
 Console.WriteLine("Задача 6");
 Console.WriteLine($"4 -> {(CheckEvenNumber(4) ? "да" : "нет")}");

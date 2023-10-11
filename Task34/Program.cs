@@ -17,11 +17,12 @@ using System;
 public class Answer
 {
     public static int CountEvenElements(int[] array)
-    { 
+    {
         int countEvenElements = 0;
         for (int i = 0; i < array.Length; i++)
         {
-            if(array[i] % 2 == 0){
+            if (array[i] % 2 == 0)
+            {
                 countEvenElements++;
             }
         }
@@ -32,21 +33,23 @@ public class Answer
     {
         for (int i = 0; i < array.Length; i++)
         {
-            if(i == array.Length - 1){
+            if (i == array.Length - 1)
+            {
                 Console.WriteLine($"{array[i]}");
-            } else Console.Write($"{array[i]} ");
+            }
+            else Console.Write($"{array[i]} ");
         }
-     
+
     }
 
 
-// Не удаляйте и не меняйте метод Main! 
+    // Не удаляйте и не меняйте метод Main! 
     public static void Main(string[] args)
     {
         int[] array;
         if (args.Length == 0)
         {
-           // Здесь вы можете поменять значения для отправки кода на Выполнение
+            // Здесь вы можете поменять значения для отправки кода на Выполнение
             array = new int[] { 100, 102, 105, 166, 283, 764, 300, 499, 133 };
         }
         else

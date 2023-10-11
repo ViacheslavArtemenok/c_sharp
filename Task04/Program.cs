@@ -2,12 +2,15 @@
 2, 3, 7 -> 7
 44, 5, 78 -> 78
 22, 3, 9 -> 22*/
-int GetMaxNumber(int a, int b, int c){
+int GetMaxNumber(int a, int b, int c)
+{
     int max = a;
-    if(b > max){
+    if (b > max)
+    {
         max = b;
     }
-    if(c > max){
+    if (c > max)
+    {
         max = c;
     }
     return max;

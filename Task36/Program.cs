@@ -18,10 +18,11 @@ public class Answer
         int sum = 0;
         for (int i = 0; i < array.Length; i++)
         {
-            if(i % 2 != 0){
+            if (i % 2 != 0)
+            {
                 sum += array[i];
             }
-            
+
         }
         return sum;
 
@@ -31,21 +32,23 @@ public class Answer
     {
         for (int i = 0; i < array.Length; i++)
         {
-            if(i == array.Length - 1){
+            if (i == array.Length - 1)
+            {
                 Console.WriteLine($"{array[i]}");
-            } else Console.Write($"{array[i]} ");
+            }
+            else Console.Write($"{array[i]} ");
         }
 
     }
 
 
-// Не удаляйте и не меняйте метод Main! 
+    // Не удаляйте и не меняйте метод Main! 
     public static void Main(string[] args)
     {
         int[] array;
         if (args.Length == 0)
         {
-           // Здесь вы можете поменять значения для отправки кода на Выполнение
+            // Здесь вы можете поменять значения для отправки кода на Выполнение
             array = new int[] { 18, 76, 11 };
         }
         else
